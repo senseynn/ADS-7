@@ -18,8 +18,7 @@ void Train::addCar(bool light) {
     first->next = first;
     first->prev = first;
     current = first;
-  }
-  else {
+  } else {
     Car* last = first->prev;
     last->next = newCar;
     newCar->prev = last;
@@ -54,8 +53,7 @@ int Train::getLength() {
     }
     if (!current->light) {
       found = true;
-    }
-    else {
+    } else {
       length = 0;
     }
   }
